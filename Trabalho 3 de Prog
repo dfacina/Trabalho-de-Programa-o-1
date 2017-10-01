@@ -1,0 +1,45 @@
+/*Daniel Guedes Facina Netto
+/*Trabalho 3 de PROG
+/*Gabarito
+*/
+
+
+#include <stdio.h>
+
+
+int main()
+{
+    float nota_1;			
+    float nota_2;
+	int r;
+    
+    do
+    {
+	printf("\nEntre com uma nota: \n");
+	scanf("%f", &nota_1);
+	printf("\nentre com outra nota: \n");
+	scanf("%f", &nota_2);
+	
+	
+	if((nota_1 + nota_2)/2 < 6)
+	{
+		printf("\n o aluno esta de recuperacao\n");
+	}
+	if ((nota_1 + nota_2)/2 >= 6)
+	{
+		printf("o aluno foi aprovado\n");
+	}
+    
+   		printf("\nDeseja continuar inserindo notas? 1-Sim/2-Nao");
+    	scanf("%d", &r);
+    	
+    }	while(r==1);
+    	
+		if(r==2)
+    	printf("\nTermino das notas\n");
+    
+		system("pause");
+		return 0;
+    	
+		
+}
